@@ -42,13 +42,15 @@ class UrlShortenerControllerTest extends TestCase
         );
 
         $response = $this->json('POST', '/admin/urls', [
-            'redirect_url' => 'https://www.google.com'
+            'redirect_url' => 'https://www.google.com',
+            'alias' => 'awesome'
         ]);
 
         $response->assertStatus(201);
 
         $response = $this->json('POST', '/admin/urls', [
-            'redirect_url' => 'https://www.google.com'
+            'redirect_url' => 'https://www.twitter.com',
+            'alias' => 'awesome'
         ]);
         $response->assertStatus(422);
     }

@@ -41,20 +41,25 @@ class UrlShortener extends Command
      */
     public function handle(UrlServiceInterface $urlService, Factory $validator) : void
     {
-        $customSlug = "";
+        $customSlug = null;
         $redirectUrl = $this->ask("Please add the redirected url. Example ('https://techinasia.com')");
+
+        $data = ['redirect_url' => $redirectUrl];
 
         if ($this->confirm('Do you wish to add custom slug?')) {
             $customSlug = $this->ask("Please add custom slug");
+            if($customSlug) {
+                $data['alias'] = $customSlug;
+            }
         }
 
         try {
             $result = $validator->make(
-                ['redirect_url' => $redirectUrl,'alias' => $customSlug],
+                $data,
                 UrlFormRule::rules("POST")
             )->validate();
 
-            $url = $urlService->addUrlShortener($redirectUrl, $customSlug);
+            $url = $urlService->addUrlShortener($redirectUrl, null, $customSlug);
 
             $this->info("Successfully added a new shorten url");
         } catch (ValidationException $validationException) {

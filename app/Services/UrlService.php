@@ -49,7 +49,7 @@ class UrlService implements UrlServiceInterface
      * @param string $alias
      * @return Url
      */
-    public function addUrlShortener(string $url, User $user, string $alias=null):Url
+    public function addUrlShortener(string $url, User $user=null, string $alias=null):Url
     {
         $slug = "";
 
@@ -68,7 +68,7 @@ class UrlService implements UrlServiceInterface
             'slug' => $slug,
             'redirect_url' => $url,
             'alias' => $alias,
-            'user_id' => $user->id
+            'user_id' => $user !== null ? $user->id : null
         ]);
 
         return $url;
