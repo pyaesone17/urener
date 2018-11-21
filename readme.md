@@ -79,7 +79,7 @@ POST /admin/urls
 ```
 
 #### Update url shortener
-PATCH /admin/urls/1
+PUT /admin/urls/1
 ```json
 {
     "alias" : "hcm",
