@@ -75,6 +75,19 @@ POST /admin/urls
 #### 5. Visit the alias url, boom you are redirected to the destination
 http://127.0.0.1:8000/hcm
 
+## Quick Start
+Here is a quick start to easily generate and test the app
+
+#### 1. Seed the data via artisan
+``` bash
+php artisan serve
+```
+
+#### 2. List all of the urls via artisan
+``` bash
+php artisan urlshortener:list 1
+```
+
 
 ## Available Endpoints
 
