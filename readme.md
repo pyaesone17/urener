@@ -79,7 +79,7 @@ http://127.0.0.1:8000/hcm
 ## Available Endpoints
 
 #### 1. View url shortener list
-GET /admin/urls/1
+GET /admin/urls
 
 #### 2. View url shortener detail
 GET /admin/urls/1
