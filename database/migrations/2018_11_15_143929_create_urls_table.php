@@ -16,8 +16,8 @@ class CreateUrlsTable extends Migration
         Schema::create('urls', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->nullable()->unsigned()->references('id')->on('users')->onDelete('cascade');
-            $table->string('slug')->unique();
-            $table->string('alias')->unique()->nullable();
+            $table->string('slug')->index()->unique();
+            $table->string('alias')->index()->unique()->nullable();
             $table->string('redirect_url');
             $table->timestamps();
         });
