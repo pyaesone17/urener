@@ -28,7 +28,12 @@ php artisan serve
 php artisan passport:client --password
 ```
 
-#### 2. Issue Access Token
+#### 2. Create Admin User
+``` bash
+php artisan make:admin
+```
+
+#### 3. Issue Access Token
 
 ``` php
     $response = $http->post('http://your-app.com/oauth/token', [
@@ -36,14 +41,14 @@ php artisan passport:client --password
             'grant_type' => 'password',
             'client_id' => 'client-id',
             'client_secret' => 'client-secret',
-            'username' => 'taylor@laravel.com',
+            'username' => 'admin@shortener.com',
             'password' => 'my-password',
             'scope' => '',
         ],
     ]);
 ```
 
-#### 3. Create url shortener
+#### 4. Create url shortener
 POST /admin/urls
 ```json
 {
@@ -52,9 +57,38 @@ POST /admin/urls
 }
 ```
 
-#### 4. Visit the alias url, boom you are redirected to the destination
+#### 5. Visit the alias url, boom you are redirected to the destination
 http://127.0.0.1:8000/hcm
 
+
+## Available Endpoints
+
+#### View url shortener list
+GET /admin/urls/1
+
+#### View url shortener detail
+GET /admin/urls/1
+
+#### Create url shortener
+POST /admin/urls
+```json
+{
+    "alias" : "hcm",
+    "redirect_url" : "https://hinchatmal.com/",
+}
+```
+
+#### Update url shortener
+PATCH /admin/urls/1
+```json
+{
+    "alias" : "hcm",
+    "redirect_url" : "https://hinchatmal.com/",
+}
+```
+
+#### Delete url shortener
+DELETE /admin/urls/1
 
 ## Command Line
 #### Make the admin user via cli for api authentication
