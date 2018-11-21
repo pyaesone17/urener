@@ -107,10 +107,18 @@ php artisan urlshortener:list {page(1,2,3,4)}
 ```
 
 ## Configuration
-Right now, the app supports two style for generating random slug
+
+#### ID Generator Driver
+Currently the app supports two style for generating random slug
 "youtube" style short id generator and "uuid" generator, configure it on .env.
 
 ID_GENERATOR="youtube"
+
+#### DNS rule validation
+By default the application will validate whether provided redirect url is existed on realword or not.
+To disable that feature, simply set false on .env.
+
+DNS_CHECK=false
 
 ## Tests
 ``` bash
