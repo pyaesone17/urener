@@ -11,6 +11,8 @@ Url shortener is a web application based on laravel. It mainly use Automatic Dep
 * Pluggable slug generator
 * CLI powered administration
 
+Url shortener is accessible, yet powerful and robust application to make shorten url.
+
 ## Installation
 
 #### Install dependecy of the application
