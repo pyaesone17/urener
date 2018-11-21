@@ -18,4 +18,18 @@ return [
     */
 
     'idgenerator' => env('ID_GENERATOR', 'youtube'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Defautl DNScheck value
+    |--------------------------------------------------------------------------
+    |
+    | This option controls the default DNScheck that will be used on 
+    | deciding whether redirect url is really existed on real world or not
+    |
+    | Supported: "youtube", "uuid"
+    |
+    */
+
+    'dnscheck' => env('DNS_CHECK', true),
 ];
