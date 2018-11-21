@@ -23,11 +23,25 @@ php artisan serve
 
 ## Application Flow
 
-#### Generate the client for password grant
+#### 1. Generate the client for password grant
 ``` bash
 php artisan passport:client --password
 ```
 
+#### 2. Issue Access Token
+
+``` php
+    $response = $http->post('http://your-app.com/oauth/token', [
+        'form_params' => [
+            'grant_type' => 'password',
+            'client_id' => 'client-id',
+            'client_secret' => 'client-secret',
+            'username' => 'taylor@laravel.com',
+            'password' => 'my-password',
+            'scope' => '',
+        ],
+    ]);
+```
 
 ## Command Line
 #### Make the admin user via cli for api authentication
