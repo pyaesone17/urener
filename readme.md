@@ -1,13 +1,13 @@
 ## Features
 
-1. Caching the url
-2. Logging the visitor
-3. Laravel Passport Authentication
-4. Caching the url
-5. Unit Test & Integration Test & Behavior Test
-6. DNS checker validation
-7. Pluggable slug generator
-8. CLI powered administration
+* Caching the url
+* Logging the visitor
+* Laravel Passport Authentication
+* Caching the url
+* Unit Test & Integration Test & Behavior Test
+* DNS checker validation
+* Pluggable slug generator
+* CLI powered administration
 
 ## Installation
 
