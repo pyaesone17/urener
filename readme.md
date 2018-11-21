@@ -106,6 +106,12 @@ php artisan urlshortener:make
 php artisan urlshortener:list {page(1,2,3,4)}
 ```
 
+## Configuration
+Right now, the app supports two style for generating random slug
+"youtube" style short id generator and "uuid" generator, configure it on .env.
+
+ID_GENERATOR="youtube"
+
 ## Tests
 ``` bash
 /vendor/bin/phpunit
