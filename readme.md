@@ -1,4 +1,4 @@
-## Features
+## About URL shortener
 
 Url shortener is a web application based on laravel. It mainly use Automatic Dependency Injection of Laravel service container to abstract the implementation from high level code. Thanks to Taylor Otwell for this awesome framework. This repository focus on the pricinple of "Code to interface" and SOLID. The features of the application include
 
