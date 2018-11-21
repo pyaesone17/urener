@@ -63,13 +63,13 @@ http://127.0.0.1:8000/hcm
 
 ## Available Endpoints
 
-#### View url shortener list
+#### 1. View url shortener list
 GET /admin/urls/1
 
-#### View url shortener detail
+#### 2. View url shortener detail
 GET /admin/urls/1
 
-#### Create url shortener
+#### 3. Create url shortener
 POST /admin/urls
 ```json
 {
@@ -78,7 +78,7 @@ POST /admin/urls
 }
 ```
 
-#### Update url shortener
+#### 4.Update url shortener
 PUT /admin/urls/1
 ```json
 {
@@ -87,7 +87,7 @@ PUT /admin/urls/1
 }
 ```
 
-#### Delete url shortener
+#### 5. Delete url shortener
 DELETE /admin/urls/1
 
 ## Command Line
