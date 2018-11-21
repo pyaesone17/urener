@@ -43,6 +43,19 @@ php artisan passport:client --password
     ]);
 ```
 
+#### 3. Create url shortener
+POST /admin/urls
+```json
+{
+    "alias" : "hcm",
+    "redirect_url" : "https://hinchatmal.com/",
+}
+```
+
+#### 4. Visit the alias url, boom you are redirected to the destination
+http://127.0.0.1/hcm
+
+
 ## Command Line
 #### Make the admin user via cli for api authentication
 ``` bash
