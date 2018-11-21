@@ -53,7 +53,7 @@ POST /admin/urls
 ```
 
 #### 4. Visit the alias url, boom you are redirected to the destination
-http://127.0.0.1/hcm
+http://127.0.0.1:8000/hcm
 
 
 ## Command Line
