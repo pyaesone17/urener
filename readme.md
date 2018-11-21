@@ -1,6 +1,6 @@
 ## About Urener
 
-URENER is a url shortener web application based on laravel. It mainly use Automatic Dependency Injection of Laravel service container to abstract the implementation from high level code. Thanks to Taylor Otwell for this awesome framework. This repository focus on the pricinple of "Code to interface" and SOLID. The features of the application include
+URENER is a url shortener web application based on laravel. It mainly use automatic dependency injection of Laravel service container to abstract the implementation from high level code. Thanks to Taylor Otwell for this awesome framework. This repository focus on the pricinple of "Code to interface" and SOLID. The features of the application include
 
 * Custom slug on top of the Id generator
 * Logging the visitor
