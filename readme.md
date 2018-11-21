@@ -129,7 +129,7 @@ ID_GENERATOR="youtube"
 
 #### DNS rule validation
 By default the application will validate whether provided redirect url is existed on realword or not.
-To disable that feature, simply set false on .env.
+To disable that feature, simply set false on .env. (Please not that DNS checking is disabled by default in Testing environment)
 
 DNS_CHECK=false
 
