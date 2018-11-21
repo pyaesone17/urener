@@ -1,3 +1,14 @@
+## Features
+
+1. Caching the url
+2. Logging the visitor
+3. Laravel Passport Authentication
+4. Caching the url
+5. Unit Test & Integration Test & Behavior Test
+6. DNS checker validation
+7. Pluggable slug generator
+8. CLI powered administration
+
 ## Installation
 
 #### Install dependecy of the application
@@ -120,7 +131,7 @@ To disable that feature, simply set false on .env.
 
 DNS_CHECK=false
 
-## Tests
+## Testing
 ``` bash
 /vendor/bin/phpunit
 ```
