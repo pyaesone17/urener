@@ -1,27 +1,43 @@
 ## Installation
 
-#### install dependecy of the application
+#### Install dependecy of the application
+``` bash
 composer install
+```
 
-#### migrate the database for laravel passport and application tables
+#### Migrate the database for laravel passport and application tables
+``` bash
 php artisan migrate
+```
 
-#### generate the client for password grant
+#### Generate the client for password grant
+``` bash
 php artisan passport:client --password
+```
 
-#### serve the application
+#### Serve the application
+``` bash
 php artisan serve
+```
 
 
 ## Command Line
-#### make the admin user via cli for api authentication
+#### Make the admin user via cli for api authentication
+``` bash
 php artisan make:admin
+```
 
-#### add the urlshortener via cli easily
+#### Add the urlshortener via cli easily
+``` bash
 php artisan urlshortener:make
+```
 
-#### list the available urlshorteners via cli 
+#### List the available urlshorteners via cli 
+``` bash
 php artisan urlshortener:list {page(1,2,3,4)}
+```
 
 ## Tests
+``` bash
 /vendor/bin/phpunit
+```
