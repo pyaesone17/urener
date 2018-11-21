@@ -10,14 +10,22 @@ composer install
 php artisan migrate
 ```
 
-#### Generate the client for password grant
+
+#### Install laravel passport
 ``` bash
-php artisan passport:client --password
+php artisan passport:install
 ```
 
 #### Serve the application
 ``` bash
 php artisan serve
+```
+
+## Application Flow
+
+#### Generate the client for password grant
+``` bash
+php artisan passport:client --password
 ```
 
 
