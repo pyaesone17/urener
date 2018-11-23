@@ -80,7 +80,7 @@ Here is a quick start to easily generate and test the app
 
 #### 1. Seed the data via artisan
 ``` bash
-php artisan serve
+php artisan db:seed
 ```
 
 #### 2. List all of the urls via artisan
